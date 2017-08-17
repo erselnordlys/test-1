@@ -6,10 +6,6 @@ const jslint          = require('gulp-jslint');
 const csslint         = require('gulp-csslint');
 const uglifyjs        = require('uglify-js');
 
-gulp.task('hello', function () {
-    console.log('Hello world')
-});
-
 
 gulp.task('clear-build', function() {
     del.sync('build');
