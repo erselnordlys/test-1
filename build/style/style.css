@@ -1,0 +1,209 @@
+
+body {
+    background-color: white;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+.wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: 3px solid black;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-height: 600px;
+    max-width: 1600px;
+    min-height: 570px;
+    min-width: 980px;
+    width: 100%;
+}
+
+.column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    height: 570px;
+    max-height: 100%;
+    min-height: 400px;
+}
+
+.col-1,
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.image {
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    position: relative;
+    -webkit-transition: -webkit-filter 0.4s;
+    transition: -webkit-filter 0.4s;
+    transition: filter 0.4s;
+    transition: filter 0.4s, -webkit-filter 0.4s;
+}
+
+.col-1__image:nth-child(1) {
+    background: url('images/tiger.jpg') top center / cover;
+    background-position: 15%;
+}
+
+.col-1__image:nth-child(2) {
+    background: url('images/soldiers.jpg') top center / cover;
+}
+
+.col-1__image:nth-child(3) {
+    background: url('images/oldman.jpg') top center / cover;
+}
+
+.col-2__image:first-child {
+    background: url('images/voodoo.png') top center / cover;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    padding-bottom: 6px;
+}
+
+.col-2__image:last-child {
+    background: none;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.col-2__bottom-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.col-2__bottom-image {
+    border: 3px solid black;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.col-2__bottom-image:first-child {
+    background: url('images/ww1.jpg') top center / cover;
+}
+
+.col-2__bottom-image:last-child {
+    background: url('images/dirt.png') top center / cover;
+}
+
+.col-3__image:nth-child(1) {
+    background: url('images/dig.jpg') top center / cover;
+}
+
+.col-3__image:nth-child(2) {
+    background: url('images/phantomas.jpg') top center / cover;
+}
+
+.col-3__image:nth-child(3) {
+    background: url('images/ambulance.jpg') top center / cover;
+}
+
+.overlay {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.overlay-text:hover {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+}
+
+.hidden {
+    display: none;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes enlargeText {
+    0% {font-size: 17px;}
+    100% {font-size: inherit;}
+}
+
+@keyframes enlargeText {
+    0% {font-size: 17px;}
+    100% {font-size: inherit;}
+}
