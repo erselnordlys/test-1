@@ -66,6 +66,11 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
-.node_modules
-
+node_modules/
+images/
+.idea/
+scripts/
+style/
+images/
+dev/
 # End of https://www.gitignore.io/api/git,webstorm
