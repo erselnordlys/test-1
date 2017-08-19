@@ -1,3 +1,3 @@
 # test-1
 
-To run project, run index.html.
+To run project, run buuld/index.html.
